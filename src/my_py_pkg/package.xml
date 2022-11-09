@@ -4,7 +4,7 @@
   <name>my_py_pkg</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="ranish@todo.todo">ranish</maintainer>
+  <maintainer email="ranish075bei@ioepc.edu.np">ranish</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
