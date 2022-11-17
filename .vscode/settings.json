@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/src/my_cpp_pkg"
+    "cmake.sourceDirectory": "${workspaceFolder}/src/my_cpp_pkg",
+    "python.analysis.typeCheckingMode": "off"
 }
