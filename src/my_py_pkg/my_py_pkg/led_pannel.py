@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from my_robot_interfaces.msg import LedStatesArray
 from my_robot_interfaces.srv import SetLed
+import sys
 
 
 class LedPannelNode(Node):
