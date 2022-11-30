@@ -4,12 +4,10 @@
   <name>my_cpp_pkg</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="ranish@todo.todo">ranish</maintainer>
+  <maintainer email="ranish075bei@ioepc.edu.np">ranish</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-
-  <depend>rclcpp</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
