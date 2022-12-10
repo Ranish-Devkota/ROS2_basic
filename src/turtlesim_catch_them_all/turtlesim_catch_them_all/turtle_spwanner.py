@@ -13,10 +13,14 @@ from my_robot_interfaces.srv import CatchTurtle
 class TurtlespwannerNode(Node):
     def __init__(self):
         super().__init__("turtle_spwanner")
-        self.turtle_name_prefix = "Turtle"
+        self.declare_parameter("spwanning_frequency", 1.25)
+        self.spawn_frequency = self.get_parameter("spwanning_frequency").value
+        self.declare_parameter("turtle_name_prefix", "Turtle")
+        self.turtle_name_prefix = self.get_parameter(
+            "turtle_name_prefix").value
         self.counter = 0
         self.alive_Turtles = []
-        self.call_timer = self.create_timer(2.0, self.timer_)
+        self.call_timer = self.create_timer(self.spawn_frequency, self.timer_)
         self.alive_Turtles_publisher = self.create_publisher(
             TurtleArray, "alive_turtles", 10)
         self.catch_turtle_srv = self.create_service(
