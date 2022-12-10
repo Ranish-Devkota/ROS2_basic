@@ -66,7 +66,8 @@ class TurtlesimController(Node):
 
         msg = Twist()
 
-        if dist > 0.5:         
+        if dist > 0.5:
+            msg.linear.x = 0.5*dist_x         
 
             # for orientation
             goal_theta = math.atan2(dist_y, dist_x)
@@ -80,7 +81,7 @@ class TurtlesimController(Node):
 
             msg.angular.z = 0.25* diff
               # for linear
-            msg.linear.x = 0.5*dist_x
+            
            
         else:
             #target reached

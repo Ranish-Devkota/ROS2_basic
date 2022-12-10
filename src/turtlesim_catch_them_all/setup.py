@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
         "controller = turtlesim_catch_them_all.turtlesim_controller:main",
-        "spwanner= turtlesim_catch_them_all.turtle_spwanner:main"
+        "spwanner = turtlesim_catch_them_all.turtle_spwanner:main",
+        "target = turtlesim_catch_them_all.targetposition:main "
         ],
     },
 )
